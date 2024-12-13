@@ -2,7 +2,7 @@
 name: Maven Build and Test Workflow
 
 on:
-  workflow_call:
+  workflow_call:  # Specifies that this workflow is callable by another workflow
     inputs:
       java_version:
         description: 'Java version to use'
