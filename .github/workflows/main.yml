@@ -9,7 +9,7 @@ on:
 
 jobs:
   call-maven-build:
-    uses: owner/repo/.github/workflows/maven-build-and-test.yml@main  # Replace with your own repo and branch
+    uses: majid9971/maven_project/.github/workflows/maven-build-and-test.yml@main  # Replace with your own repo and branch
     with:
       java_version: '11'  # Pass Java version as input
     secrets:
