@@ -49,18 +49,4 @@ jobs:
           name: myapp-jar
           path: target/myapp-1.0-SNAPSHOT.jar
 
-  consume-artifact:
-    name: Consume Artifact
-    runs-on: ubuntu-latest
-    needs: build
 
-    steps:
-      # Step 1: Download the artifact
-      - name: Download artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: myapp-jar
-
-      # Step 2: Run the JAR
-      - name: Run the JAR
-        run: java -jar myapp-1.0-SNAPSHOT.jar
