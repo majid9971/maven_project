@@ -9,9 +9,8 @@ on:
 
 jobs:
   call-maven-build:
-    uses: ./.github/workflows/maven-build-and-test.yml  # Replace with your own repo and branch
+    uses: ./.github/workflows/maven-build-and-test.yml  # Local reference to the reusable workflow
     with:
       java_version: '11'  # Pass Java version as input
     secrets:
       MY_SECRET_API_KEY: ${{ secrets.MY_SECRET_API_KEY }}  # Pass secret from the repository
-
