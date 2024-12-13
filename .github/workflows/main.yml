@@ -12,5 +12,4 @@ jobs:
     uses: ./.github/workflows/maven-build-and-test.yml
     with:
       java_version: "11" 
-    secrets:
-      MY_SECRET_API_KEY: ${{ secrets.MY_SECRET_API_KEY }} 
+ 
